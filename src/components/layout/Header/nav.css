@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Open + Sans);
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: end;
+  display: flex;
+}
+
+.searchTerm {
+  width: 50%;
+  border: 3px solid rgb(0, 9, 10);
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: rgb(244, 247, 246);
+}
+
+.searchTerm:focus {
+  color: rgb(1, 11, 19);
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid rgb(245, 249, 250);
+  background: rgb(241, 244, 245);
+  text-align: cright;
+  color: rgb(68, 66, 66);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-width {
+  width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  .short {
+    height: 60px;
+    align-items: center;
+  }
+  .sho {
+    height: 40px;
+  }
+}
+
+#search-container {
+  display: grid;
+  align-items: center;
+  padding: 0 80px;
+  grid-area: search-container;
+  z-index: 1;
+}
+
+#search-container input {
+  outline: none;
+  border-radius: 2px;
+  /* height: 30px; */
+  border: 0;
+  padding-left: 48px;
+  padding-right: 5px;
+  background: url("../../../img/search.png") no-repeat rgba(255, 255, 255, 0.3);
+  background-position: 15px center;
+  background-size: 20px 20px;
+}
+
+@media screen and (max-width: 990px) {
+  #search-container {
+    width: 50%;
+    display: grid;
+    align-items: center;
+    padding: 0 90px;
+    grid-area: search-container;
+    z-index: 1;
+  }
+  .hi {
+    /* background-color: #2f4f4f; */
+    /* background-color: rgb(68, 66, 66); */
+    align-items: center;
+    width: 20%;
+  }
+}
